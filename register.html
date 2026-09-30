@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Buat Akun - Ganz Website</title>
+
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+
+    <!-- REGISTER -->
+
+    <main class="register-container">
+
+        <div class="register-box">
+
+            <div class="logo">
+                G
+            </div>
+
+
+            <h1>Buat Akun</h1>
+
+            <p class="subtitle" id="subtitle">
+                Masukkan email untuk melanjutkan
+            </p>
+
+
+            <!-- =====================
+                 TAHAP 1
+                 ===================== -->
+
+            <div id="step1">
+
+                <div class="input-group">
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="icon">
+                            ✉
+                        </span>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Masukkan email kamu"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- KODE AWALNYA DISEMBUNYIKAN -->
+
+                <div
+                    class="input-group hidden"
+                    id="codeGroup"
+                >
+
+                    <label for="code">
+                        Kode Verifikasi
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="icon">
+                            🔐
+                        </span>
+
+                        <input
+                            type="text"
+                            id="code"
+                            placeholder="Masukkan kode 6 digit"
+                            maxlength="6"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="main-button"
+                    id="sendCode"
+                >
+                    Kirim Kode Verifikasi
+                </button>
+
+            </div>
+
+
+            <!-- =====================
+                 TAHAP 2
+                 ===================== -->
+
+            <div
+                id="step2"
+                class="hidden"
+            >
+
+                <div class="verified">
+                    ✓ Email berhasil diverifikasi
+                </div>
+
+
+                <!-- USERNAME -->
+
+                <div class="input-group">
+
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="icon">
+                            👤
+                        </span>
+
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Buat username"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="input-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="icon">
+                            🔒
+                        </span>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Buat password"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- KONFIRMASI -->
+
+                <div class="input-group">
+
+                    <label for="confirmPassword">
+                        Konfirmasi Password
+                    </label>
+
+                    <div class="input-wrapper">
+
+                        <span class="icon">
+                            🔒
+                        </span>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Ulangi password"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="main-button"
+                    id="createAccount"
+                >
+                    Buat Akun
+                </button>
+
+            </div>
+
+
+            <!-- =====================
+                 GOOGLE
+                 ===================== -->
+
+            <div class="alternative">
+
+                <div class="divider">
+
+                    <span></span>
+
+                    <p>atau</p>
+
+                    <span></span>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="google-button"
+                >
+
+                    <span class="google-icon">
+                        G
+                    </span>
+
+                    Lanjutkan dengan Google
+
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN -->
+
+            <p class="switch-text">
+
+                Sudah punya akun?
+
+                <a href="index.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 Ebi Website
+        </p>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>
